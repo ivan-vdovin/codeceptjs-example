@@ -1,0 +1,197 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1562280835784' stop='1562280913925'>
+    <name>Service provider regional division:</name>
+    <title>Service provider regional division:</title>
+    <test-cases>
+        <test-case start='1562280835785' status='passed' stop='1562280880999'>
+            <name>make sure that provider belongs to MSK region and check warnings</name>
+            <title>make sure that provider belongs to MSK region and check warnings</title>
+            <labels>
+                <label name='tag' value='null'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1562280846836' status='passed' stop='1562280849090'>
+                    <name>I click "ЖКХ"</name>
+                    <title>I click "ЖКХ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280849091' status='passed' stop='1562280849098'>
+                    <name>I see element "Регион"</name>
+                    <title>I see element "Регион"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280849098' status='passed' stop='1562280849103'>
+                    <name>I grab attribute from "Регион", "aria-label"</name>
+                    <title>I grab attribute from "Регион", "aria-label"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280849104' status='passed' stop='1562280849110'>
+                    <name>I grab text from "Провайдер"</name>
+                    <title>I grab text from "Провайдер"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280849214' status='passed' stop='1562280851449'>
+                    <name>I click "ЖКУ-Москва"</name>
+                    <title>I click "ЖКУ-Москва"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280851549' status='passed' stop='1562280853777'>
+                    <name>I click "Оплатить ЖКУ в Москве"</name>
+                    <title>I click "Оплатить ЖКУ в Москве"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280853881' status='passed' stop='1562280860317'>
+                    <name>I fill field "Код плательщика за ЖКУ в Москве", "999"</name>
+                    <title>I fill field "Код плательщика за ЖКУ в Москве", "999"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280860423' status='passed' stop='1562280862713'>
+                    <name>I click "Оплатить ЖКУ в Москве"</name>
+                    <title>I click "Оплатить ЖКУ в Москве"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280862713' status='passed' stop='1562280862718'>
+                    <name>I see "Поле неправильно заполнено"</name>
+                    <title>I see "Поле неправильно заполнено"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280862822' status='passed' stop='1562280869376'>
+                    <name>I fill field "За какой период оплачиваете коммунальные услуги", "21.0001"</name>
+                    <title>I fill field "За какой период оплачиваете коммунальные услуги", "21.0001"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280869478' status='passed' stop='1562280871729'>
+                    <name>I click "Оплатить ЖКУ в Москве"</name>
+                    <title>I click "Оплатить ЖКУ в Москве"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280871729' status='passed' stop='1562280871734'>
+                    <name>I see "Поле заполнено некорректно"</name>
+                    <title>I see "Поле заполнено некорректно"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280871734' status='passed' stop='1562280871737'>
+                    <name>I see "Сумма платежа"</name>
+                    <title>I see "Сумма платежа"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280871843' status='passed' stop='1562280878649'>
+                    <name>I fill field "Сумма платежа", "*-+()/"</name>
+                    <title>I fill field "Сумма платежа", "*-+()/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280878753' status='passed' stop='1562280880994'>
+                    <name>I click "Оплатить ЖКУ в Москве"</name>
+                    <title>I click "Оплатить ЖКУ в Москве"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280880994' status='passed' stop='1562280880999'>
+                    <name>I see "Поле заполнено неверно"</name>
+                    <title>I see "Поле заполнено неверно"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1562280881076' status='passed' stop='1562280896477'>
+            <name>make sure that search returns expected provider </name>
+            <title>make sure that search returns expected provider </title>
+            <labels>
+                <label name='tag' value='null'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1562280891556' status='passed' stop='1562280894087'>
+                    <name>I fill field "Поиск по платежам", "ЖКУ-Москва"</name>
+                    <title>I fill field "Поиск по платежам", "ЖКУ-Москва"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280894087' status='passed' stop='1562280894095'>
+                    <name>I grab text from "Первый провайдер"</name>
+                    <title>I grab text from "Первый провайдер"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280894201' status='passed' stop='1562280896474'>
+                    <name>I click "Первый провайдер"</name>
+                    <title>I click "Первый провайдер"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280896474' status='passed' stop='1562280896477'>
+                    <name>I see current url equals "/zhku-moskva/"</name>
+                    <title>I see current url equals "/zhku-moskva/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1562280896538' status='passed' stop='1562280913861'>
+            <name>make sure that provider does not belong to SPB region</name>
+            <title>make sure that provider does not belong to SPB region</title>
+            <labels>
+                <label name='tag' value='null'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1562280906939' status='passed' stop='1562280909183'>
+                    <name>I click "ЖКХ"</name>
+                    <title>I click "ЖКХ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280909285' status='passed' stop='1562280913852'>
+                    <name>serviceProvidersPage: pickRegion </name>
+                    <title>serviceProvidersPage: pickRegion </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1562280909285' status='passed' stop='1562280911523'>
+                            <name>I click "Регион"</name>
+                            <title>I click "Регион"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1562280911625' status='passed' stop='1562280913852'>
+                            <name>I click "г. Санкт-Петербург"</name>
+                            <title>I click "г. Санкт-Петербург"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1562280913852' status='passed' stop='1562280913857'>
+                    <name>I dont see "ЖКУ-Москва"</name>
+                    <title>I dont see "ЖКУ-Москва"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1562280913858' status='passed' stop='1562280913861'>
+                    <name>I dont see element "ЖКУ-Москва"</name>
+                    <title>I dont see element "ЖКУ-Москва"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
